@@ -6,7 +6,7 @@ COPY entrypoint.sh /entrypoint.sh
 
 # Installs the `dpkg-buildpackage` command
 RUN apt-get update
-RUN apt-get install build-essential debhelper devscripts debian-keyring debian-archive-keyring autoconf automake cmake gettext libtool-bin locales ninja-build pkg-config unzip libtool g++i curl -y
+RUN apt-get install build-essential debhelper devscripts autoconf automake cmake gettext libtool-bin locales ninja-build pkg-config unzip libtool g++ curl -y
 
 # Install `dh-virtualenv` 1.2
 RUN curl --output /tmp/dh-virtualenv.deb https://download.nylas.com/gha-deps/dh-virtualenv_1.2.2-1~buster_all.deb
